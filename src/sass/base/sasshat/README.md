@@ -1,0 +1,118 @@
+
+# SASSHAT
+
+### Note
+Still work in progress
+
+## Import
+
+Just import sasshat on the top of your `main.sass`
+
+```
+@import path-to-file/sasshat
+```
+
+## Mixins
+
+`+user-select-none`
+```
+=user-select-none
+	-webkit-user-select: 	none
+	-moz-user-select: 		none
+	-ms-user-select: 		none
+	user-select: 			none
+```
+
+`+inputWebkitAutofill`
+
+```
+=inputWebkitAutofill($background: white, $color: black)
+	// Work on input, textarea and select
+	// input:-webkit-autofill,
+	// textarea:-webkit-autofill,
+	// select:-webkit-autofill
+	&:-webkit-autofill
+		-webkit-box-shadow: inset 0 0 0px 1000px $background !important
+		-webkit-text-fill-color: $color !important
+```
+
+`+transition`
+```
+=transition ($element: all, $time: .3s, $func: ease-out)
+	-webkit-transition: 	$element $time $func
+	-moz-transition: 		$element $time $func
+	-o-transition: 			$element $time $func
+	transition: 			$element $time $func
+```
+
+`+animation`
+```
+=animation ($animation, $time: .3s, $func: ease-in-out, $delay: 0s, $iteration: 1, $direction: normal)
+	-webkit-animation: 	$animation $time $func $delay $iteration $direction
+	-moz-animation: 		$animation $time $func $delay $iteration $direction
+	-o-animation: 			$animation $time $func $delay $iteration $direction
+	animation: 			$animation $time $func $delay $iteration $direction
+```
+
+`+transformOrigin`
+```
+=transformOrigin($x: 0, $y: 0)
+	-webkit-transform-origin:	$x $y
+	-ms-transform-origin: 		$x $y
+	transform-origin: 			$x $y
+```
+
+`+translate`
+```
+=translate($valueX:-50%,$valueY:-50%)
+	-webkit-transform: 		translateX($valueX) translateY($valueY)
+	-ms-transform: 			translateX($valueX) translateY($valueY)
+	transform: 				translateX($valueX) translateY($valueY)
+```
+
+`+translateY`
+```
+=translateY($value:-50%)
+	-webkit-transform: 		translateY($value)
+	-ms-transform: 			translateY($value)
+	transform: 				translateY($value)
+```
+
+`+translateX`
+```
+=translateX($value:-50%)
+	-webkit-transform: 		translate3d($value,0,0)
+	-ms-transform: 			translate3d($value,0,0)
+	transform: 				translate3d($value,0,0)
+```
+
+`+rotate`
+```
+=rotate($deg:90deg)
+	-webkit-transform: 		rotate($deg)
+	-ms-transform: 			rotate($deg)
+	transform: 				rotate($deg)
+```
+
+`+scale`
+```
+=scale($x:1.1,$y:1.1)
+	-ms-transform: scale($x,$y)
+	-webkit-transform: scale($x,$y)
+	transform: scale($x,$y)
+```
+
+`+scaleX`
+```
+=scaleX($x:1.1)
+	-ms-transform: scaleX($x)
+	-webkit-transform: scaleX($x)
+	transform: scaleX($x)
+```
+
+`+scaleY`
+```
+=scaleY($y:1.1)
+	-ms-transform: scaleY($y)
+	-webkit-transform: scaleY($y)
+	transform: scaleY($y)
