@@ -1,9 +1,8 @@
 {
-  "name": "Findomestic-dashboard",
-  "version": "1.0.0",
-  "repository": "https://git.caffeina.co/main/findomestic-website-dashboard",
+  "name": "webpack-bolerplate",
+  "version": "0.0.1",
+  "repository": "https://github.com/michaelgenesini/webpack-bolerplate",
   "scripts": {
-    "predev": "npm rebuild node-sass",
     "dev": "webpack-dashboard -- webpack-dev-server --config ./config/dev.conf.js --progress --colors --content-base public/",
     "build": "./node_modules/.bin/webpack --config ./config/build.conf.js --progress --colors"
   },
@@ -30,28 +29,26 @@
     "imports-loader": "^0.6.5",
     "mocha": "^2.4.5",
     "phantomjs": "^2.1.3",
-    "webpack": "^1.12.9"
-  },
-  "dependencies": {
-    "babel-polyfill": "^6.9.1",
-    "chokidar": "^1.6.1",
-    "css-loader": "^0.25.0",
-    "es5-shim": "^4.5.9",
-    "es6-shim": "^0.35.1",
-    "eslint-loader": "^1.3.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.9.0",
-    "isomorphic-fetch": "^2.2.1",
-    "json-loader": "^0.5.4",
-    "node-fetch": "^1.6.3",
     "node-sass": "^3.10.1",
     "raw-loader": "^0.5.1",
-    "react": "^15.3.2",
     "sass-loader": "^4.0.2",
+    "chokidar": "^1.6.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "style-loader": "^0.13.1",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
     "webpack": "^1.13.3",
     "webpack-dashboard": "^0.2.0",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.9.1",
+    "es5-shim": "^4.5.9",
+    "es6-shim": "^0.35.1",
+    "eslint-loader": "^1.3.0",
+    "isomorphic-fetch": "^2.2.1",
+    "json-loader": "^0.5.4",
+    "node-fetch": "^1.6.3"
   },
   "author": {
     "name": "Michael Genesini",
