@@ -12,7 +12,7 @@ yarn
 Run dev mode:
 
 ```
-yarn run dev
+npm run dev
 ```
 
 Go to:
